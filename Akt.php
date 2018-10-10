@@ -202,13 +202,13 @@ class Akt extends CI_Controller {
 							}
 							else{
 								++$error_count;
-								$error_msg[] = "Error pada data ".$nm_pd." - ".$insert_pt['result']['error_desc'];	
+								$error_msg[] = "Error pada data ( '".$jenis_akt." / ".$judul.") : '".$insert_data['result']['error_desc']."' <br>";	
 							}
 							
 						}
 						else{
 						++$error_count;
-						$error_msg[] = "Error pada data ( '".$nama." / ".$nim.") : '".$insert_pt['result']['error_desc']."' <br>";	
+						$error_msg[] = "Error pada data ".$nm_pd." - ".$insert_pt['result']['error_desc'];	
 						}
 					}
 					
